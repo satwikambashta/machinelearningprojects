@@ -10,10 +10,10 @@ def load_known_faces(folder_path):
     known_face_encodings = []
     known_face_labels = []
 
-    for file_name in os.listdir(folder_path):
-        file_path = os.path.join(folder_path, file_name)
+    for file_name in os.listdir(folder_path): #change
+        file_path = os.path.join(folder_path, file_name) #change
         if file_name.lower().endswith(('.png', '.jpg', '.jpeg')):
-            sample_image = face_recognition.load_image_file(file_path)
+            sample_image = face_recognition.load_image_file(file_path) #change
             sample_encoding = face_recognition.face_encodings(sample_image)[0]
             known_face_encodings.append(sample_encoding)
             known_face_labels.append(file_name.split(".")[0])  # Extract label from filename
