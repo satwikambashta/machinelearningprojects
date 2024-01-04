@@ -1,0 +1,1 @@
+The model predicts whether a message is spam or ham. Neural Networks with 4 epoch is used here. The dataset has to be updated and improved for more types of spam and I am working on this problem however for the scope of this project, the model gives accuracy 97.87% and precision 100%.
