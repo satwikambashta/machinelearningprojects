@@ -1,0 +1,1 @@
+Classifies images into happy or sad. Created using google colab. Need a more powerful machine for similar application for live videos.
