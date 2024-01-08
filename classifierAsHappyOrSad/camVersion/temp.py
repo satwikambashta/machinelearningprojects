@@ -4,7 +4,7 @@ import tensorflow as tf
 import numpy as np
 img = cv2.imread('sad.jpeg')
 resize = tf.image.resize(img, (256,256))
-new_model = load_model('my_model.h5')
+new_model = load_model('./models/videoClassifier.h5')
 yhat = new_model.predict(np.expand_dims(resize/255, 0))
 if yhat > 0.8:
     print(f'Predicted class is Happy')

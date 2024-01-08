@@ -127,6 +127,7 @@ while True:
     if key == ord('q'):
         break
 
-from keras.models import load_model
 #SAVE THE MODEL
-model.save('my_model.h5')
+from tensorflow.keras.models import load_model
+model.save(os.path.join('models','videoClassifier.h5'))
+
